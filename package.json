@@ -6,13 +6,25 @@
   "scripts": {
     "dev": "rsbuild --open",
     "build": "rsbuild build",
-    "preview": "rsbuild preview"
+    "preview": "rsbuild preview",
+    "scrape": "node src/scrape.js",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/material": "^9.0.1",
+    "@typescript-eslint/parser": "^5.62.0",
+    "cheerio": "^1.0.0-rc.18",
+    "eslint": "^8.57.1",
+    "prettier": "^3.8.3",
+    "prettier-eslint": "^16.4.2",
     "react": "^19.2.6",
     "react-dom": "^19.2.6"
   },
   "devDependencies": {
+    "prettier": "^2.8.8",
     "@rsbuild/core": "^2.0.6",
     "@rsbuild/plugin-react": "^2.0.0"
   }
